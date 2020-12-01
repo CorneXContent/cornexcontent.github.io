@@ -50085,10 +50085,10 @@ xhr.addEventListener("readystatechange", function () {
     console.log(this.responseText);
   }
 });
-xhr.open("GET", "https://api.payfast.co.za/ping?testing=true"); //xhr.setRequestHeader('Access-Control-Allow-Origin', 'localhost:1234')
-//xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-//xhr.setRequestHeader('Content-type', 'application/json')
-
+xhr.open("GET", "https://api.payfast.co.za/ping?testing=true");
+xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://cornexcontent.github.io');
+xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+xhr.setRequestHeader('Content-type', 'application/json');
 xhr.setRequestHeader("merchant-id", "10018867");
 xhr.setRequestHeader("version", "v1");
 xhr.setRequestHeader("timestamp", "2020-12-01T09:51:46");
@@ -50160,7 +50160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51134" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51958" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
